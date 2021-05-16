@@ -41,11 +41,11 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
           <!-- No "client" so might replace for something else -->
           <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+            <a href="#about" class="nav__link">About me</a>
           </li>
           <li class="nav__item">
             <a href="#contact" class="nav__link">Contact</a>
@@ -57,16 +57,48 @@
       <div class="header__text">
         <h1 class="heading-primary">
           <!-- Replace the following name with your name -->
-          <span>Meihong(Tom) Ge</span>
+          <span>Meihong Ge</span>
         </h1>
         <!-- Put a small paragraph about yourself -->
-        <p>A Software Development Engineer studying at Duke University.</p>
+        <p>A Software Development Engineer currently studying at Duke University.</p>
         <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
     </div>
   </header>
 
   <main role="main">
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              <!-- Hi, my name is Meihong Ge, I also go by the English name Tom, call me whichever you prefer. -->
+              I am a Master of Science student majoring in Electrical & Computer Engineering at Duke University and expected to graduate around June of 2022.
+              <!-- I attend a Duo-Degree program as a undergraduate and recieved a duo-bachelor's degree in Electrical Engineering from Chongqing University & University of Cincinnati. -->
+              <br>
+              Fanscinated by the idea of shaping the world with Software, I selected Software Development as my Graduate track. 
+              <br>
+              <!-- After extensive study into foundamental course like Computer Composition, Data Structures, Algorithms, Computer Networks, etc... -->
+              I found my edge lies at designing the general structure of a Software and grasping the bigger picture.
+              However, the more I learned, the more I realize that my knowledge is limited. 
+              So I am selecting courses and reading books realted to server and operating system to have a better understanding of what is happening on the bottom level.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="#" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/my-pic2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ***** Work ***** -->
 
@@ -79,20 +111,20 @@
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Portfolio Template</h3>
+              <h3>Tetris Game</h3>
               <p>
-                A free Open Source Portfolio for anyone to use for free.
+                A Teris Game written in Verilog.
               </p>
               <ul class="work__list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-                <li>Parcel</li>
+                <li>Verilog</li>
+                <li>VGA</li>
+                <li>Single Cycle CPU</li>
+                <li>Game Logic</li>
               </ul>
 
               <div class="work__links">
                 <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                  Details <span>&rarr;</span>
                 </a>
                 <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
                   <img src="./images/github.svg" class="work__code" alt="GitHub">
@@ -106,21 +138,20 @@
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Calculator</h3>
+              <h3>HTTP Proxy</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                A Simple Forward Proxy written in C.
               </p>
               <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
+                <li>C</li>
+                <li>Socket</li>
+                <li>HTTP</li>
+                <li>LRU Cache</li>
               </ul>
 
               <div class="work__links">
                 <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                  Details <span>&rarr;</span>
                 </a>
                 <a href="#">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
@@ -134,21 +165,20 @@
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Notificator</h3>
+              <h3>Mini-UPS</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                A shipping website that can work with Mini-Amazon to simualte the process of buying a product online.
               </p>
               <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
+                <li>Python</li>
+                <li>Django</li>
+                <li>Socket</li>
+                <li>Sql</li>
               </ul>
 
               <div class="work__links">
                 <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                  Details <span>&rarr;</span>
                 </a>
                 <a href="#">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
@@ -180,31 +210,6 @@
       </div>
     </section>
 
-    <!-- ***** About ***** -->
-
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-              in vel, ex quam quidem quos mollitia labore aut sunt eius
-              ratione molestiae fuga veniam facere similique voluptate.
-            </p>
-            <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
-          </div>
-
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- ***** Contact ***** -->
