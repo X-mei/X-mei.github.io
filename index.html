@@ -121,8 +121,19 @@
                 <li>Game Logic</li>
               </ul>
 
+              <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup1()">×</div>
+                  <h1>Tetris Game</h1>
+                  <p>1. This is a multi-phase project that start off by building a single cycle CPU which consists of basic component like ALU, regfile, I-Mem, D-Mem using Verilog language.</p>
+                  <p>2. The Tetris Logic is written in Verilog too following VGA's display logic. The game support multiple type of blocks, input control of the blocks position and direction, a score counter and a fever mode(speed up).</p>
+                  <p>3. It can be programed into a FPGA board to play a on a display that has a VGA port.</p>
+                </div>
+              </div>
+
               <div class="work__links">
-                <a href="#" target="_blank" class="link__text">
+                <a href="javascript:void(0);" onclick="togglePopup1()" class="link__text">
                   Details <span>&rarr;</span>
                 </a>
                 <a href="https://github.com/X-mei/Tetris-Game" title="View Source Code" target="_blank">
@@ -149,8 +160,21 @@
                 <li>Source Code Study</li>
               </ul>
 
+              <div class="popup" id="popup-2">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup2()">×</div>
+                  <h1>My Malloc</h1>
+                  <p>1. This is a implementation of C's malloc/free with simplified mechanics.</p>
+                  <p>2. Actual memory allocation is done by "sbrk" system call. The memory(free-memory) is managed with a self-define node structure with a doubly-linked list.</p>
+                  <p>3. There is a merge functionality where freed memory node with adjacent address are merge back into a large node to avoid fragmentation.</p>
+                  <p>4. Malloc & Free is thread safe with a no-lock mechanism, implemented with Thread Local Storage.</p>
+                  <p>5. To further understand the topic, I studied the source code of glibc's implementation of malloc/free, realizing they have more layers of indirection, namely Arenas, Bins and Chunks to act like multiple level of caches in order to speed up the whole process.</p>
+                </div>
+              </div>
+
               <div class="work__links">
-                <a href="#" class="link__text">
+                <a href="javascript:void(0);" onclick="togglePopup2()" class="link__text">
                   Details <span>&rarr;</span>
                 </a>
                 <a href="https://github.com/X-mei/My-Malloc">
@@ -166,7 +190,7 @@
 
           <div class="work__box">
             <div class="work__text">
-              <h3>HTTP Proxy</h3>
+              <h3>Forward Proxy</h3>
               <p>
                 A Simple Forward Proxy with Caching ability written in C++.
               </p>
@@ -177,8 +201,20 @@
                 <li>LRU Cache</li>
               </ul>
 
+              <div class="popup" id="popup-3">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup3()">×</div>
+                  <h1>Forward Proxy</h1>
+                  <p>1. This is a Forward Proxy written in C++ that support GET, POST and CONNECT method with a simple LRU to provide Caching ability when needed.</p>
+                  <p>2. Proxy's connection with browser and destination server is done with TCP socket, using socket library in C.</p>
+                  <p>3. The Proxy interpret the HTTP header to act accordingly. Specifically, alter the header when GET & POST to make the request instead of the browser and forward the result back from the server, cache the result when GET and finally build a tunnel when CONNECT so browser and destination server communicate directly</p>
+                  <p>4. Each request from the browser is handled by a quest. A thread-pool is implemented to manage the thread resources. Epoll is used as a IO multiplexing mechanism to handle large amount of request.</p>
+                </div>
+              </div>
+
               <div class="work__links">
-                <a href="#" class="link__text">
+                <a href="javascript:void(0);" onclick="togglePopup3()" class="link__text">
                   Details <span>&rarr;</span>
                 </a>
                 <a href="https://github.com/X-mei/Forward-Proxy">
@@ -204,8 +240,20 @@
                 <li>Sql</li>
               </ul>
 
+              <div class="popup" id="popup-4">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup4()">×</div>
+                  <h1>Mini-UPS</h1>
+                  <p>1. This is a Full-stack project where we built a UPS-like website that can work with other Amazon-like website to mimic a full cycle of online shopping & delivering.</p>
+                  <p>2. The website is built with Python using Django framework. The front-end webpage and back-end database(postgresql) scheme is built with Django and the back-end communication and parsing is done in a seperate component decoupled from Djnago framework.</p>
+                  <p>3. The front-end allow viewing of package status and altering of package destination(if the package is not yet out for delivery). The back-end communicate with mini-Amazon under a google-protobuf API set by multiple teams as the communication protocol.</p>
+                  <p>4. Due to the good design and well-defined protocol, different server can build their server in whichever language, in our case, python or Java, we still have a very good compatibility.</p>
+                </div>
+              </div>
+
               <div class="work__links">
-                <a href="#" class="link__text">
+                <a href="javascript:void(0);" onclick="togglePopup4()" class="link__text">
                   Details <span>&rarr;</span>
                 </a>
                 <a href="https://github.com/X-mei/Mini-UPS">
